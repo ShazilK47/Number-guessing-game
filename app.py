@@ -31,7 +31,6 @@ def load_css(file_name="styles.css"):
         css = f.read()
         st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
-# Call this function at the start of the app
 load_css()
 
 if not st.session_state.game_started:
